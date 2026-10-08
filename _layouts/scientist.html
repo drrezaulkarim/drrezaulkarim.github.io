@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8faf9">
+  {% seo %}
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/scientist.css' | relative_url }}">
+  <script src="{{ '/assets/js/lucide.min.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/scientist.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-inner"><a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Rezaul Karim home">RK<span>.</span></a><button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation"><i data-lucide="menu" aria-hidden="true"></i></button><nav id="site-nav" aria-label="Main navigation"><a href="#journey">Journey</a><a href="#invention">Invention</a><a href="#publications">Publications</a><a href="#community">Teaching &amp; service</a><a href="#contact" class="nav-contact">Contact <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></nav></div></header>
+  <main id="main">{{ content }}</main>
+  <footer class="site-footer"><div class="container"><p>Rezaul Karim, Ph.D.</p><p>Research · Invention · Exploration</p><a href="#main" aria-label="Back to top" title="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a></div></footer>
+</body>
+</html>
