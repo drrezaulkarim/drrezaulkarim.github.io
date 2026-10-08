@@ -45,7 +45,7 @@
       url: /medvt/index.html
       local: true
     - label: Code
-      url: https://github.com/rkyuca/medvt
+      url: https://github.com/drrezaulkarim/medvt
 - title: "Understanding Video Transformers for Segmentation: A Survey of Application and Interpretability"
   year: 2023
   venue: arXiv · Survey
@@ -72,7 +72,7 @@
   url: https://link.springer.com/chapter/10.1007/978-3-030-32686-9_2
   links:
     - label: Code
-      url: https://github.com/rkyuca/lossless_image_compression
+      url: https://github.com/drrezaulkarim/lossless_image_compression
 - title: Hybrid Deep Learning Model for Stock Price Prediction
   year: 2018
   venue: IEEE SSCI

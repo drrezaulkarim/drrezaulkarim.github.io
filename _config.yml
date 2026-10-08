@@ -1,6 +1,6 @@
 title: Rezaul Karim | Research Scientist
 description: Capable, efficient AI. Research in language and multimodal foundation models, computer vision, and AI that learns from experience.
-url: https://rkyuca.github.io
+url: https://drrezaulkarim.github.io
 baseurl: ""
 author: Rezaul Karim
 show_downloads: false
@@ -8,7 +8,7 @@ google_analytics: false
 theme: jekyll-theme-cayman
 
 twitter_username:
-github_username: rkyuca
+github_username: drrezaulkarim
 exclude:
   - README.md
   - README_back.md
