@@ -26,7 +26,9 @@ svg.lucide { width:17px; height:17px; flex-shrink:0; stroke-width:1.7; vertical-
 #site-nav .nav-contact { display:inline-flex; align-items:center; gap:8px; color:var(--green); }
 .menu-toggle { display:none; border:0; background:transparent; padding:12px; }
 .intro { padding:36px 0 38px; }
-.intro-profile { display:grid; grid-template-columns:144px minmax(0,1fr); align-items:center; gap:30px; }
+.intro-profile { display:flex; flex-wrap:nowrap; align-items:center; gap:30px; }
+.intro-photo { flex:0 0 144px; }
+.intro-details { flex:1; min-width:0; }
 .intro-portrait { width:144px; height:168px; border-radius:8px; object-fit:cover; object-position:center 25%; }
 .intro-role { display:flex; align-items:center; gap:9px; font-size:16px; font-weight:600; }
 .status-dot { width:7px; height:7px; background:var(--green); border-radius:50%; }
@@ -137,7 +139,8 @@ svg.lucide { width:17px; height:17px; flex-shrink:0; stroke-width:1.7; vertical-
   body:not(.js) .site-header { position:relative; margin-bottom:100px; }
   .intro { padding:28px 0 30px; }
   .degree { font-size:11px; }
-  .intro-profile { grid-template-columns:100px minmax(0,1fr); gap:18px; align-items:start; }
+  .intro-profile { gap:18px; align-items:flex-start; }
+  .intro-photo { flex-basis:100px; }
   .intro-portrait { width:100px; height:120px; }
   .intro-role { font-size:15px; align-items:baseline; }
   .status-dot { flex-shrink:0; }
@@ -178,7 +181,8 @@ svg.lucide { width:17px; height:17px; flex-shrink:0; stroke-width:1.7; vertical-
 }
 @media (max-width:360px) {
   .intro { padding-top:24px; padding-bottom:26px; }
-  .intro-profile { grid-template-columns:88px minmax(0,1fr); gap:14px; }
+  .intro-profile { gap:14px; }
+  .intro-photo { flex-basis:88px; }
   .intro-portrait { width:88px; height:106px; }
   .intro-statement { font-size:20px; }
   .profile-links { gap:8px; }
