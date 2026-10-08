@@ -1,5 +1,5 @@
 - id: beginnings
-  period: Before graduate study
+  period: Earlier Research
   context: Undergraduate research · BUET · Completed 2015
   title: Finding connections across disciplines.
   summary: What if a method for understanding images could help us understand proteins?
@@ -84,7 +84,7 @@
   title: AI that learns from experience.
   future: true
   summary: Remembering a fact and learning a skill are different capabilities. Useful agents need both.
-  details: I am interested in memory-augmented systems that use feedback and experience to develop reusable skills. This direction connects procedural memory, skill libraries, reinforcement learning, and long-horizon tool use, with an ambition to support learning across modalities.
+  details: "Should learning end when training ends? Humans continue learning long after school, drawing on increasingly diverse experiences. That motivates my research into AI that keeps learning through interaction with the world: reflecting on experience to develop useful, actionable insights, beyond remembering past facts. Memory-augmented agents are one promising direction, connecting feedback, procedural memory, and reusable skills to improve future decisions and actions."
   focus:
     - name: Dialogue agents
       description: Remember relevant facts, preferences, and conversational context, and use feedback to improve future interactions.
