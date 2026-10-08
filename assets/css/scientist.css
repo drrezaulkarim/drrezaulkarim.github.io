@@ -25,21 +25,21 @@ svg.lucide { width:17px; height:17px; flex-shrink:0; stroke-width:1.7; vertical-
 #site-nav a[aria-current="location"] { color:var(--green); text-decoration:underline; }
 #site-nav .nav-contact { display:inline-flex; align-items:center; gap:8px; color:var(--green); }
 .menu-toggle { display:none; border:0; background:transparent; padding:12px; }
-.intro { padding:24px 0 28px; }
-.intro .eyebrow { display:flex; align-items:center; gap:9px; }
+.intro { padding:36px 0 38px; }
+.intro-profile { display:grid; grid-template-columns:144px minmax(0,1fr); align-items:center; gap:30px; }
+.intro-portrait { width:144px; height:168px; border-radius:8px; object-fit:cover; object-position:center 25%; }
+.intro-role { display:flex; align-items:center; gap:9px; font-size:16px; font-weight:600; }
 .status-dot { width:7px; height:7px; background:var(--green); border-radius:50%; }
 .degree { font-family:Arial,sans-serif; font-size:12px; white-space:nowrap; color:var(--muted); }
-.intro-statement { font-size:24px; line-height:1.4; margin-top:10px; }
+.intro-statement { font-size:26px; line-height:1.4; margin:9px 0 16px; }
 .intro-statement span { color:var(--green); }
-.intro-bottom { display:flex; align-items:center; padding:14px 0 12px; }
-.identity { display:flex; align-items:center; gap:17px; }
-.identity img { width:48px; height:48px; border-radius:50%; object-fit:cover; object-position:center 25%; }
-.identity p { font-size:13px; }
-.identity p:first-child { font-weight:600; }
+.intro-appointment { font-size:17px; font-weight:600; }
+.intro-education { font-size:16px; color:#46524c; margin-top:4px; }
 .text-link,.chapter-links a,.profile-links a,.patent a,.service-group a { display:inline-flex; align-items:center; gap:7px; font-size:13px; color:var(--green); }
 .text-link:hover,.chapter-links a:hover,.profile-links a:hover,.patent a:hover,.service-group a:hover { text-decoration:underline; }
-.intro-summary { max-width:850px; font-size:14px; color:var(--muted); }
-.profile-links { display:flex; gap:24px; flex-wrap:wrap; margin-top:14px; }
+.intro-summary { max-width:920px; font-size:17px; color:var(--ink); margin-top:22px; }
+.profile-links { display:flex; gap:24px; flex-wrap:wrap; margin-top:18px; }
+.profile-links a { font-size:15px; }
 .section { padding:78px 0; border-top:1px solid var(--line); }
 .journey { padding-top:42px; }
 .section-heading { margin-bottom:35px; max-width:760px; }
@@ -135,16 +135,18 @@ svg.lucide { width:17px; height:17px; flex-shrink:0; stroke-width:1.7; vertical-
   #site-nav { display:flex; flex-wrap:wrap; gap:6px 20px; position:absolute; top:64px; left:0; right:0; padding:14px 20px 20px; background:var(--paper); border-bottom:1px solid var(--line); }
   .js #site-nav:not(.is-open) { display:none; }
   body:not(.js) .site-header { position:relative; margin-bottom:100px; }
-  .intro { padding:20px 0 24px; }
+  .intro { padding:28px 0 30px; }
   .degree { font-size:11px; }
-  .intro-statement { font-size:21px; }
-  .intro-bottom { padding-top:12px; }
-  .identity { gap:13px; }
-  .identity img { width:44px; height:44px; flex-shrink:0; }
-  .identity p { font-size:11px; }
-  .intro-summary { font-size:14px; }
+  .intro-profile { grid-template-columns:100px minmax(0,1fr); gap:18px; align-items:start; }
+  .intro-portrait { width:100px; height:120px; }
+  .intro-role { font-size:15px; align-items:baseline; }
+  .status-dot { flex-shrink:0; }
+  .intro-statement { font-size:21px; margin-bottom:12px; }
+  .intro-appointment { font-size:16px; }
+  .intro-education { font-size:15px; }
+  .intro-summary { font-size:16px; }
   .profile-links { gap:15px; }
-  .profile-links a { font-size:12px; }
+  .profile-links a { font-size:14px; }
   .section { padding:48px 0; }
   .section-heading h2,.beyond h2,.contact h2 { font-size:32px; }
   .section-heading > p:last-child:not(.eyebrow) { font-size:14px; }
@@ -175,11 +177,12 @@ svg.lucide { width:17px; height:17px; flex-shrink:0; stroke-width:1.7; vertical-
   .site-footer p:nth-child(2) { order:3; width:100%; }
 }
 @media (max-width:360px) {
-  .intro { padding-top:18px; padding-bottom:20px; }
+  .intro { padding-top:24px; padding-bottom:26px; }
+  .intro-profile { grid-template-columns:88px minmax(0,1fr); gap:14px; }
+  .intro-portrait { width:88px; height:106px; }
   .intro-statement { font-size:20px; }
-  .intro-summary { font-size:13px; }
   .profile-links { gap:8px; }
-  .profile-links a { font-size:11px; gap:4px; }
+  .profile-links a { font-size:14px; gap:4px; }
   .profile-links svg { width:14px; height:14px; }
   .journey { padding-top:36px; }
   .contact-link { font-size:15px; }
