@@ -38,6 +38,14 @@ document.querySelectorAll('[data-filter]').forEach(button => {
       if (!paper.hidden) count += 1;
     });
     document.querySelector('#publication-status').textContent = `${count} publications shown.`;
+    const empty = document.querySelector('.publication-empty');
+    empty.hidden = count !== 0;
+    if (count === 0) {
+      empty.querySelector('span').textContent = button.dataset.filter === 'agents'
+        ? 'This theme is a research vision; no papers are listed yet.'
+        : 'Supporting work in this theme is included in the research section.';
+      empty.querySelector('a').href = `#${button.dataset.themeTarget}`;
+    }
   });
 });
 if ('IntersectionObserver' in window) {

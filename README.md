@@ -16,14 +16,14 @@ Open `http://localhost:4000`. Build without serving with `bundle exec jekyll bui
 
 ## Updating content
 
-- `_data/journey.yml`: timeline dates, research narrative, figures, and thesis/supervisor links.
+- `_data/research.yml`: research themes, flagship results, supporting work, figures, and agent research vision.
 - `_data/publications.yml`: publications, venues, author lists, categories, and links.
-- `index.html`: introduction, patents, teaching, service, personal interests, and contact.
+- `index.html`: hero, highlights, research cards, patents, condensed service, and contact.
 - `assets/css/scientist.css`: responsive homepage styling.
 - `_layouts/scientist.html`: homepage navigation and metadata. The original project layout is separate.
 
 Publication dates are distinct from when research was conducted. Patent statuses should match public records; submissions are labeled separately from published applications and grants.
 
-Thesis URLs, the preferred Neil Bruce profile link, travel photographs/captions, and any additional confirmed patent records can be added when available. No public placeholder links are used.
+Keep performance metrics and their benchmark qualifiers aligned with the supplied papers. HTML TODO comments identify missing metrics, email details, employer disclosure confirmation, mentorship, and invited talks. No public placeholder links are used. Set `email` in `_config.yml` when the preferred public address is confirmed; the hero and contact links then render automatically.
 
 Lucide icons are vendored in `assets/js/lucide.min.js` (version 0.468.0, ISC license). The homepage remains readable without JavaScript; JavaScript adds publication filtering and mobile navigation.

@@ -1,86 +1,104 @@
 ---
 layout: scientist
+image: /assets/images/rezaul-karim-headshot.png
 ---
 <section class="intro" aria-labelledby="intro-title">
   <div class="container">
     <div class="intro-profile">
-      <div class="intro-photo"><img class="intro-portrait" src="{{ '/assets/images/rezaul-karim-headshot.png' | relative_url }}" alt="Rezaul Karim" width="144" height="168" fetchpriority="high"></div>
+      <div class="intro-photo"><img class="intro-portrait" src="{{ '/assets/images/rezaul-karim-headshot.png' | relative_url }}" alt="Rezaul Karim" width="176" height="205" fetchpriority="high"></div>
       <div class="intro-details">
-        <p class="intro-role"><span class="status-dot"></span> Research scientist · Toronto, Canada</p>
-        <p class="intro-statement">Capable, efficient AI <span>that learns from experience.</span></p>
+        <p class="eyebrow">Senior Researcher · Toronto, Canada</p>
+        <h1 id="intro-title">Rezaul Karim, Ph.D.</h1>
         <p class="intro-appointment">Senior Researcher, Huawei Canada</p>
-        <p class="intro-education">Ph.D., York University · M.Sc., University of Manitoba</p>
-      </div>
-    </div>
-    <p class="intro-summary">I connect advances in models and systems with the demands of practical applications. My research spans computer vision, language and multimodal foundation models, and AI that learns from experience.</p>
-    <div class="profile-links">
-      <a href="{{ '/assets/files/Rezaul-Karim-CV.pdf' | relative_url }}">CV <i data-lucide="file-text" aria-hidden="true"></i></a>
-      <a href="https://scholar.google.com/citations?user=sgKzrSgAAAAJ&amp;hl=en">Google Scholar <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/rezaulkarimyu/">LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
-      <a href="https://github.com/drrezaulkarim">GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
-    </div>
-  </div>
-</section>
-
-<section id="journey" class="section journey" aria-labelledby="journey-title">
-  <div class="container">
-    <div class="section-heading"><p class="eyebrow">Research journey</p><h2 id="journey-title">A question that keeps expanding.</h2><p>How can we make AI more capable, without making it impractical to use?</p></div>
-    <div class="progression" aria-label="Expanding research interests"><span>Vision</span><i data-lucide="arrow-right" aria-hidden="true"></i><span>Language</span><i data-lucide="arrow-right" aria-hidden="true"></i><span>Multimodal</span><i data-lucide="arrow-right" aria-hidden="true"></i><span>Across modalities</span></div>
-    <div class="timeline">
-      {% for chapter in site.data.journey %}
-      <article class="chapter{% if chapter.future %} chapter-future{% endif %}" id="{{ chapter.id }}">
-        <div class="chapter-date"><span>{{ chapter.period }}</span></div>
-        <div class="chapter-body">
-          <p class="chapter-context">{{ chapter.context }}</p>
-          <h3>{{ chapter.title }}</h3>
-          <p class="chapter-lead">{{ chapter.summary }}</p>
-          {% if chapter.details %}<p>{{ chapter.details }}</p>{% endif %}
-          {% if chapter.focus %}<dl class="focus-list">{% for focus in chapter.focus %}<div><dt>{{ focus.name }}</dt><dd>{{ focus.description }}</dd></div>{% endfor %}</dl>{% endif %}
-          {% if chapter.image %}<figure class="research-figure"><img src="{{ chapter.image | relative_url }}" alt="{{ chapter.image_alt }}" loading="lazy" width="{{ chapter.image_width }}" height="{{ chapter.image_height }}"><figcaption>{{ chapter.caption }}</figcaption></figure>{% endif %}
-          {% if chapter.links %}<div class="chapter-links">{% for link in chapter.links %}<a href="{% if link.local %}{{ link.url | relative_url }}{% else %}{{ link.url }}{% endif %}">{{ link.label }} <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>{% endfor %}</div>{% endif %}
+        <p class="intro-statement">Capable, efficient AI <span>that learns from experience.</span></p>
+        <p class="intro-summary">I develop efficient foundation models and agents that learn from experience, connecting scalable AI systems with practical applications.</p>
+        <div class="profile-actions">
+          <a class="primary-button" href="{{ '/assets/files/Rezaul-Karim-CV.pdf' | relative_url }}"><i data-lucide="file-text" aria-hidden="true"></i> View CV</a>
+          <div class="profile-links" aria-label="Professional profiles">
+            <a class="icon-link" href="https://scholar.google.com/citations?user=sgKzrSgAAAAJ&amp;hl=en"><i data-lucide="graduation-cap" aria-hidden="true"></i><span>Scholar</span></a>
+            <a class="icon-link" href="https://www.linkedin.com/in/rezaulkarimyu/"><i data-lucide="linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            <a class="icon-link" href="https://github.com/drrezaulkarim"><i data-lucide="github" aria-hidden="true"></i><span>GitHub</span></a>
+            {% if site.email %}<a class="icon-link" href="mailto:{{ site.email | escape }}"><i data-lucide="mail" aria-hidden="true"></i><span>Email</span></a>{% else %}<!-- TODO: email -->{% endif %}
+          </div>
         </div>
-      </article>
-      {% endfor %}
+      </div>
     </div>
+    <ul class="highlights" aria-label="Research highlights">
+      <li>300+ citations</li><li>CVPR · ICRA · EMNLP</li><li>Up to 77% higher training throughput</li><li>US patent application</li>
+    </ul>
   </div>
 </section>
 
-<section id="invention" class="section invention" aria-labelledby="invention-title">
+<section id="research" class="section research" aria-labelledby="research-title">
   <div class="container">
-    <div class="section-heading"><p class="eyebrow">Research to invention</p><h2 id="invention-title">Ideas become useful<br>when they meet real constraints.</h2><p>I work at the intersection of scientific contribution and practical implementation, developing proof-of-concepts and evaluating methods on production-scale clusters.</p></div>
-    <div class="invention-grid">
-      <div class="invention-copy"><h3>From a research question<br>to a working system.</h3><p>Memory budgets, latency, communication costs, and robustness shape the path from a promising model to a useful application. Those constraints are part of the research problem.</p><p>My longer-term ambition is to turn research into inventions and products that make capable AI more accessible across applications.</p><a class="text-link" href="https://www.linkedin.com/in/rezaulkarimyu/">Start a conversation on LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
-      <div class="patents">
-        <article class="patent"><p class="eyebrow">Patent application · Public</p><h3>Method and system for predicting a trajectory</h3><p>Connecting trajectory prediction research with autonomous driving applications.</p><p class="patent-meta">Filed 2023 · Published 2025<br>US20250123107A1</p><a href="https://patents.google.com/patent/US20250123107A1/en">View patent application <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></article>
-        <article class="patent"><p class="eyebrow">Patent submission</p><h3>Zero-overhead tensor parallelism for scalable LLM training</h3><p>Research into reducing the systems overhead of scaling foundation-model training.</p><p class="patent-meta">Submitted 2025</p></article>
-      </div>
-    </div>
+    <div class="section-heading"><p class="eyebrow">Research</p><h2 id="research-title">Making capable AI practical.</h2><p>Efficient foundation models, spatiotemporal understanding, and agents that learn from experience.</p></div>
+    <nav class="theme-chips" aria-label="Research themes">{% for theme in site.data.research %}<a href="#{{ theme.id }}">{{ theme.title | escape }} <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>{% endfor %}</nav>
+    {% for theme in site.data.research %}
+    <article class="research-theme{% if theme.vision %} research-vision{% endif %}" id="{{ theme.id }}" aria-labelledby="{{ theme.id }}-title">
+      {% if theme.vision %}<p class="eyebrow">Looking ahead · Research vision</p>{% endif %}
+      <h3 id="{{ theme.id }}-title">{{ theme.title | escape }}</h3>
+      <p class="theme-framing">{{ theme.framing | escape }}</p>
+      {% if theme.vision %}
+        <p class="vision-copy">{{ theme.details | escape }}</p>
+        <dl class="agent-directions">{% for focus in theme.focus %}<div><dt>{{ focus.name }}</dt><dd>{{ focus.description }}</dd></div>{% endfor %}</dl>
+      {% else %}
+        <div class="flagship-grid">
+        {% for card in theme.flagships %}
+          <article class="flagship">
+            <p class="eyebrow">{{ card.venue | escape }}</p>
+            <h4>{{ card.title | escape }}</h4>
+            <p>{{ card.description | escape }}</p>
+            {% if card.metric %}<p class="flagship-metric">{{ card.metric | escape }}</p>{% else %}<!-- TODO: add a verified quantitative result for {{ card.title | escape }} -->{% endif %}
+            {% if card.detail %}<p>{{ card.detail | escape }}</p>{% endif %}
+            {% if card.metric_todo %}<!-- TODO: add minADE/minFDE delta -->{% endif %}
+            {% if card.image %}<figure class="research-figure"><img src="{{ card.image | relative_url }}" alt="{{ card.image_alt | escape }}" loading="lazy" width="{{ card.image_width }}" height="{{ card.image_height }}"></figure>{% endif %}
+            <div class="paper-links">{% for link in card.links %}<a href="{% if link.local %}{{ link.url | relative_url }}{% else %}{{ link.url | escape }}{% endif %}">{{ link.label }} <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>{% endfor %}</div>
+          </article>
+        {% endfor %}
+        </div>
+        <details class="supporting-work"><summary>More in {{ theme.title | escape }}</summary><ul>{% for work in theme.supporting %}<li><h4><a href="{{ work.url | escape }}">{{ work.title | escape }} <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></h4><p class="supporting-venue">{{ work.venue | escape }}</p><p>{{ work.description | escape }}</p>{% if work.disclosure_todo %}<!-- TODO: confirm disclosure allowed by employer -->{% endif %}</li>{% endfor %}</ul></details>
+      {% endif %}
+    </article>
+    {% endfor %}
   </div>
 </section>
 
 <section id="publications" class="section publications" aria-labelledby="publications-title">
   <div class="container">
-    <div class="section-heading heading-with-link"><div><p class="eyebrow">Selected publications</p><h2 id="publications-title">The work behind the story.</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=sgKzrSgAAAAJ&amp;hl=en">All publications <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
-    <div class="publication-filters" role="group" aria-label="Filter publications by research area"><button type="button" class="active" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="foundation" aria-pressed="false">Foundation models</button><button type="button" data-filter="vision" aria-pressed="false">Vision</button><button type="button" data-filter="autonomous" aria-pressed="false">Autonomous systems</button><button type="button" data-filter="cross" aria-pressed="false">Across disciplines</button></div>
+    <div class="section-heading heading-with-link"><div><p class="eyebrow">Selected publications</p><h2 id="publications-title">Flagship papers.</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=sgKzrSgAAAAJ&amp;hl=en">Full list on Google Scholar <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+    <div class="publication-filters" role="group" aria-label="Filter publications by research theme"><button type="button" class="active" data-filter="all" aria-pressed="true">All</button>{% for theme in site.data.research %}<button type="button" data-filter="{{ theme.category }}" data-theme-target="{{ theme.id }}" aria-pressed="false">{{ theme.title | escape }}</button>{% endfor %}</div>
     <p class="sr-only" id="publication-status" role="status" aria-live="polite"></p>
+    <p class="publication-empty" hidden><span></span> <a href="#research">Explore this research theme.</a></p>
     <div class="publication-list">
       {% for paper in site.data.publications %}
-      <article class="publication" data-category="{{ paper.category }}"><div class="publication-year">{{ paper.year }}</div><div><p class="publication-venue">{{ paper.venue }}</p><h3><a href="{{ paper.url }}">{{ paper.title }} <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></h3><p class="publication-authors">{{ paper.authors }}</p>{% if paper.links %}<div class="paper-links">{% for link in paper.links %}<a href="{% if link.local %}{{ link.url | relative_url }}{% else %}{{ link.url }}{% endif %}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</div></article>
+      <article class="publication" data-category="{{ paper.category }}"><div class="publication-year">{{ paper.year }}</div><div><p class="publication-venue">{{ paper.venue | escape }}</p><h3><a href="{{ paper.url | escape }}">{{ paper.title | escape }} <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></h3><p class="publication-authors">{{ paper.authors | escape | replace: 'Rezaul Karim', '<strong>Rezaul Karim</strong>' }}</p>{% if paper.links %}<div class="paper-links">{% for link in paper.links %}<a href="{% if link.local %}{{ link.url | relative_url }}{% else %}{{ link.url | escape }}{% endif %}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</div></article>
       {% endfor %}
     </div>
+    <p class="publications-note">Additional work in visual scene understanding and other research areas is listed on <a href="https://scholar.google.com/citations?user=sgKzrSgAAAAJ&amp;hl=en">Google Scholar</a>.</p>
   </div>
 </section>
 
-<section id="community" class="section community" aria-labelledby="community-title">
+<section id="patents" class="section patents-section" aria-labelledby="patents-title">
   <div class="container">
-    <div class="section-heading"><p class="eyebrow">Teaching &amp; service</p><h2 id="community-title">Contributing beyond the paper.</h2></div>
-    <div class="community-grid">
-      <div><h3><i data-lucide="book-open" aria-hidden="true"></i> Teaching</h3><article class="teaching-role"><p class="eyebrow">2019–2024</p><h4>York University</h4><p>Teaching Assistant · Department of EECS</p><p class="muted">Design and Analysis of Algorithms; Introduction to the Theory of Computation; Operating Systems.</p></article><article class="teaching-role"><p class="eyebrow">2017–2019</p><h4>University of Manitoba</h4><p>Teaching Assistant · Department of Computer Science</p><p class="muted">Programming Practices; Data Structures and Algorithms. Grading support for introductory computer science, computer systems, and object orientation.</p></article></div>
-      <div><h3><i data-lucide="scan-text" aria-hidden="true"></i> Academic service</h3><div class="service-group"><h4>Conference reviewing</h4><p>NeurIPS · ACL · CVPR · WACV</p></div><div class="service-group"><h4>Journal reviewing</h4><p>Computer Vision and Image Understanding (CVIU)<br>IEEE Robotics and Automation Letters (RA-L)</p></div><div class="service-group"><h4>Recognition &amp; community</h4><p>DRI-EDIA Champions Pilot Program, Digital Research Alliance of Canada (2024).</p><a href="https://www.yorku.ca/research/2019/10/29/new-group-of-carswell-scholars-could-change-the-world-2/">Carswell Scholars · York research feature, 2019 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div>
+    <div class="section-heading"><p class="eyebrow">Patents</p><h2 id="patents-title">From research to invention.</h2><p>Connecting scientific ideas with the constraints of practical AI systems.</p></div>
+    <div class="patent-grid">
+      <article class="patent"><p class="eyebrow">Published patent application</p><h3>Method and system for predicting a trajectory</h3><p>Trajectory prediction for autonomous driving applications.</p><p class="patent-meta">Filed 2023 · Published 2025<br>US20250123107A1</p><a href="https://patents.google.com/patent/US20250123107A1/en">View application <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></article>
+      <article class="patent"><p class="eyebrow">Patent submission · 2025</p><h3>Zero-overhead tensor parallelism for scalable LLM training</h3><p>Reducing the systems overhead of scaling foundation-model training.</p><!-- TODO: confirm disclosure allowed by employer --></article>
     </div>
   </div>
 </section>
 
-<section id="beyond" class="section beyond" aria-labelledby="beyond-title"><div class="container beyond-inner"><p class="eyebrow">Beyond research</p><h2 id="beyond-title">Curiosity travels.</h2><p>Away from research, I enjoy traveling and exploring new places. There is always something interesting beyond the familiar.</p><span class="location"><i data-lucide="map-pin" aria-hidden="true"></i> Based in Toronto, Canada</span></div></section>
+<section id="service" class="section service" aria-labelledby="service-title">
+  <div class="container">
+    <div class="section-heading"><p class="eyebrow">Service</p><h2 id="service-title">Contributing to the research community.</h2></div>
+    <div class="service-grid">
+      <div><h3>Reviewing</h3><p><strong>Conferences:</strong> NeurIPS · ACL · CVPR · WACV</p><p><strong>Journals:</strong> Computer Vision and Image Understanding (CVIU); IEEE Robotics and Automation Letters (RA-L).</p></div>
+      <div><h3>Recognition</h3><p>DRI-EDIA Champions Pilot Program, Digital Research Alliance of Canada (2024).</p><a class="text-link" href="https://www.yorku.ca/research/2019/10/29/new-group-of-carswell-scholars-could-change-the-world-2/">Carswell Scholars · York research feature, 2019 <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+    </div>
+    <p class="teaching-line"><strong>Teaching:</strong> Teaching Assistant at York University (2019–2024) and University of Manitoba (2017–2019), supporting algorithms, computer science, theory, and systems courses.</p>
+    <!-- TODO: mentorship / interns supervised -->
+    <!-- TODO: invited talks -->
+  </div>
+</section>
 
-<section id="contact" class="section contact" aria-labelledby="contact-title"><div class="container"><p class="eyebrow">Let's connect</p><h2 id="contact-title">What’s next for AI innovation?</h2><p>Let’s have a chat about AI research and emerging directions.</p><a class="contact-link" href="https://www.linkedin.com/in/rezaulkarimyu/">Connect on LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></section>
+<section id="contact" class="section contact" aria-labelledby="contact-title"><div class="container"><p class="eyebrow">Let's connect</p><h2 id="contact-title">What’s next for AI innovation?</h2><p>Let’s have a chat about AI research and emerging directions.</p><div class="contact-actions"><a class="contact-link" href="https://www.linkedin.com/in/rezaulkarimyu/">Connect on LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>{% if site.email %}<a class="contact-link" href="mailto:{{ site.email | escape }}">Email <i data-lucide="mail" aria-hidden="true"></i></a>{% else %}<!-- TODO: email -->{% endif %}</div></div></section>

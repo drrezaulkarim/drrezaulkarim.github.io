@@ -1,0 +1,142 @@
+- id: foundation-models
+  category: foundation
+  title: Efficient foundation models
+  framing: Making LLM training and serving faster and cheaper at scale.
+  flagships:
+    - title: EPAS
+      venue: Canadian AI 2026 · PMLR 318
+      description: Progressive activation sharing for LLaMA 125M–7B, with similar loss to the baseline.
+      metric: Up to 11.1% higher training throughput · Up to 29% higher inference throughput
+      detail: Up to 10% higher average accuracy than SOTA when converting TinyLLaMA via continual pretraining.
+      links:
+        - label: Paper
+          url: https://proceedings.mlr.press/v318/karim26a.html
+        - label: arXiv
+          url: https://arxiv.org/abs/2601.19089
+    - title: ECHO-LLaMA
+      venue: EMNLP 2025 (Industry)
+      description: Co-developed efficient caching for LLaMA training; second author.
+      metric: Up to 77% higher training tokens/s · Up to 16% higher MFU
+      detail: Up to 14% lower loss at equal tokens; ~7% higher test-time throughput for the 1.1B model.
+      links:
+        - label: Paper
+          url: https://aclanthology.org/2025.emnlp-industry.156/
+  supporting:
+    - title: CommFuse
+      venue: arXiv · 2026
+      description: "Layer-level: up to 99.8% communication overhead hidden (vs 83.9% for data slicing), with 36.9% lower latency vs baseline. More than 99% hidden across 1K–16K sequence lengths."
+      url: https://arxiv.org/abs/2604.24013
+    - title: Distributed Hybrid Parallelism for Large Language Models
+      venue: arXiv · 2026
+      description: Comparative study and system design guide for distributed LLM training.
+      url: https://arxiv.org/abs/2602.09109
+    - title: Zero-overhead tensor parallelism
+      venue: Patent submission · 2025
+      description: Research into reducing the systems overhead of scalable LLM training.
+      url: "#patents"
+      disclosure_todo: true
+
+- id: spatiotemporal
+  category: spatiotemporal
+  title: Spatiotemporal understanding & prediction
+  framing: Modeling what changes over time, from video to vehicle motion.
+  flagships:
+    - title: MED-VT / MED-VT++
+      venue: MED-VT · CVPR 2023 / MED-VT++ · arXiv
+      description: Multiscale encoder-decoder video transformers, extended to multimodal learning.
+      metric: Outperforms SOTA without optical flow
+      detail: Across AVOS, actor-action, video semantic, and audio-visual segmentation.
+      image: /medvt/data/medvt_fig_2.png
+      image_alt: MED-VT multiscale encoder-decoder video transformer architecture
+      image_width: 1212
+      image_height: 446
+      links:
+        - label: MED-VT paper
+          url: https://openaccess.thecvf.com/content/CVPR2023/html/Karim_MED-VT_Multiscale_Encoder-Decoder_Video_Transformer_With_Application_To_Object_Segmentation_CVPR_2023_paper.html
+        - label: MED-VT++
+          url: https://arxiv.org/abs/2304.05930
+        - label: Project
+          url: /medvt/index.html
+          local: true
+    - title: DESTINE
+      venue: ICRA 2024
+      description: Dynamic goal queries with temporal transductive alignment for trajectory prediction.
+      metric: State-of-the-art on Argoverse
+      metric_todo: true
+      links:
+        - label: Publication record
+          url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:Y0pCki6q_DkC
+  supporting:
+    - title: Understanding Video Transformers for Segmentation
+      venue: arXiv · 2023
+      description: A survey of application and interpretability.
+      url: https://arxiv.org/abs/2310.12296
+    - title: Method and system for predicting a trajectory
+      venue: US20250123107A1 · Published 2025
+      description: Patent application connecting trajectory prediction research with autonomous driving.
+      url: https://patents.google.com/patent/US20250123107A1/en
+
+- id: scene-understanding
+  category: scene
+  title: Visual scene understanding
+  framing: Feedback, gating and robustness in dense prediction.
+  flagships:
+    - title: Recurrent Iterative Gating Networks
+      venue: WACV 2019
+      description: Feedback and iterative gating for semantic segmentation.
+      image: /my/includes/rignet.jpg
+      image_alt: Examples of semantic segmentation with recurrent iterative gating networks
+      image_width: 433
+      image_height: 245
+      links:
+        - label: Publication record
+          url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:u-x6o8ySG0sC
+    - title: Distributed Iterative Gating Networks
+      venue: WACV 2020
+      description: Distributed feedback for scene segmentation and iterative refinement.
+      links:
+        - label: Paper
+          url: https://openaccess.thecvf.com/content_WACV_2020/papers/Karim_Distributed_Iterative_Gating_Networks_for_Semantic_Segmentation_WACV_2020_paper.pdf
+  supporting:
+    - title: On the Robustness of Deep Learning Models to Universal Adversarial Attack
+      venue: CRV 2018
+      description: Studying adversarial robustness in deep neural networks.
+      url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:IjCSPb-OGe4C
+
+- id: multidisciplinary
+  category: multidisciplinary
+  title: Multidisciplinary applications
+  framing: Transferring ML and vision methods to finance, biology and data compression.
+  flagships:
+    - title: Hybrid Deep Learning for Stock Price Prediction
+      venue: IEEE SSCI 2018
+      description: Collaborative work on financial prediction from noisy temporal data.
+      metric: 198 citations
+      links:
+        - label: Publication record
+          url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:UeHWp8X0CEIC
+    - title: CoMOGrad & PHOG
+      venue: Scientific Reports 2015
+      description: Applying computer-vision descriptors to protein tertiary structure retrieval.
+      links:
+        - label: Paper
+          url: https://www.nature.com/articles/srep13275
+  supporting:
+    - title: Lossless Image Compression Using List Update Algorithms
+      venue: SPIRE 2019
+      description: Algorithmic methods for lossless image compression.
+      url: https://link.springer.com/chapter/10.1007/978-3-030-32686-9_2
+
+- id: agents
+  category: agents
+  title: Agents that learn from experience
+  framing: Remembering a fact and learning a skill are different capabilities. Useful agents need both.
+  vision: true
+  details: "Should learning end when training ends? Humans continue learning long after school, drawing on increasingly diverse experiences. That motivates my research into AI that keeps learning through interaction with the world: reflecting on experience to develop useful, actionable insights, beyond remembering past facts. Memory-augmented agents are one promising direction, connecting feedback, procedural memory, and reusable skills to improve future decisions and actions."
+  focus:
+    - name: Dialogue agents
+      description: Remember relevant facts, preferences, and conversational context, and use feedback to improve future interactions.
+    - name: Autonomous agents
+      description: Learn from action outcomes, refine planning and tool use, and build skills that transfer to new tasks.
+    - name: Coding agents
+      description: Retain repository context and prior solutions, and learn from tests, failures, and successful development workflows.

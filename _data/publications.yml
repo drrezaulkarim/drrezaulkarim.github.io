@@ -1,44 +1,29 @@
+- title: "EPAS: Efficient Training with Progressive Activation Sharing"
+  year: 2026
+  venue: Canadian AI 2026 · PMLR 318
+  authors: Rezaul Karim, M. Dialameh, Y. Liu, B. Chen, W. Ahmed
+  category: foundation
+  url: https://proceedings.mlr.press/v318/karim26a.html
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2601.19089
 - title: "CommFuse: Hiding Tail Latency via Communication Decomposition and Fusion for Distributed LLM Training"
   year: 2026
   venue: arXiv · Preprint
   authors: Rezaul Karim, A. Wen, W. Zongzuo, W. Zhang, Y. Liu, W. Ahmed
   category: foundation
   url: https://arxiv.org/abs/2604.24013
-- title: "EPAS: Efficient Training with Progressive Activation Sharing"
-  year: 2026
-  venue: Canadian AI · Accepted
-  authors: Rezaul Karim, M. Dialameh, Y. Liu, B. Chen, W. Ahmed
-  category: foundation
-  url: https://arxiv.org/abs/2601.19089
-- title: "Distributed Hybrid Parallelism for Large Language Models: Comparative Study and System Design Guide"
-  year: 2026
-  venue: arXiv · Preprint
-  authors: H. Amer, Rezaul Karim, A. Pourranjbar, W. Zhang, W. Ahmed, B. Chen
-  category: foundation
-  url: https://arxiv.org/abs/2602.09109
 - title: "ECHO-LLaMA: Efficient Caching for High-Performance LLaMA Training"
   year: 2025
-  venue: EMNLP
+  venue: EMNLP 2025 (Industry)
   authors: M. Dialameh, Rezaul Karim, H. Rajabzadeh, O. M. Awad, B. Chen, H. J. Kwon, et al.
   category: foundation
-  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:WF5omc3nYNoC
-- title: "DESTINE: Dynamic Goal Queries with Temporal Transductive Alignment for Trajectory Prediction"
-  year: 2024
-  venue: ICRA
-  authors: Rezaul Karim, S. M. A. Shabestary, A. Rasouli
-  category: autonomous
-  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:Y0pCki6q_DkC
-- title: "MED-VT++: Unifying Multimodal Learning with a Multiscale Encoder-Decoder Video Transformer"
-  year: 2024
-  venue: arXiv · Preprint
-  authors: Rezaul Karim, H. Zhao, R. P. Wildes, M. Siam
-  category: vision
-  url: https://arxiv.org/abs/2304.05930
+  url: https://aclanthology.org/2025.emnlp-industry.156/
 - title: "MED-VT: Multiscale Encoder-Decoder Video Transformer with Application to Object Segmentation"
   year: 2023
-  venue: CVPR
+  venue: CVPR 2023
   authors: Rezaul Karim, H. Zhao, R. P. Wildes, M. Siam
-  category: vision
+  category: spatiotemporal
   url: https://openaccess.thecvf.com/content/CVPR2023/html/Karim_MED-VT_Multiscale_Encoder-Decoder_Video_Transformer_With_Application_To_Object_Segmentation_CVPR_2023_paper.html
   links:
     - label: Project
@@ -46,48 +31,27 @@
       local: true
     - label: Code
       url: https://github.com/drrezaulkarim/medvt
-- title: "Understanding Video Transformers for Segmentation: A Survey of Application and Interpretability"
-  year: 2023
-  venue: arXiv · Survey
-  authors: Rezaul Karim, R. P. Wildes
-  category: vision
-  url: https://arxiv.org/abs/2310.12296
-- title: Distributed Iterative Gating Networks for Semantic Segmentation
-  year: 2020
-  venue: WACV
-  authors: Rezaul Karim, M. A. Islam, N. D. B. Bruce
-  category: vision
-  url: https://openaccess.thecvf.com/content_WACV_2020/papers/Karim_Distributed_Iterative_Gating_Networks_for_Semantic_Segmentation_WACV_2020_paper.pdf
-- title: Recurrent Iterative Gating Networks for Semantic Segmentation
-  year: 2019
-  venue: WACV
-  authors: Rezaul Karim, M. A. Islam, N. D. B. Bruce
-  category: vision
-  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:u-x6o8ySG0sC
-- title: Lossless Image Compression Using List Update Algorithms
-  year: 2019
-  venue: SPIRE
-  authors: A. Abdollahi, N. Bruce, S. Kamali, Rezaul Karim
-  category: cross
-  url: https://link.springer.com/chapter/10.1007/978-3-030-32686-9_2
-  links:
-    - label: Code
-      url: https://github.com/drrezaulkarim/lossless_image_compression
+- title: "MED-VT++: Unifying Multimodal Learning with a Multiscale Encoder-Decoder Video Transformer"
+  year: 2024
+  venue: arXiv · Preprint
+  authors: Rezaul Karim, H. Zhao, R. P. Wildes, M. Siam
+  category: spatiotemporal
+  url: https://arxiv.org/abs/2304.05930
+- title: "DESTINE: Dynamic Goal Queries with Temporal Transductive Alignment for Trajectory Prediction"
+  year: 2024
+  venue: ICRA 2024
+  authors: Rezaul Karim, S. M. A. Shabestary, A. Rasouli
+  category: spatiotemporal
+  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:Y0pCki6q_DkC
 - title: Hybrid Deep Learning Model for Stock Price Prediction
   year: 2018
-  venue: IEEE SSCI
+  venue: IEEE SSCI 2018
   authors: M. A. Hossain, Rezaul Karim, R. Thulasiram, N. D. B. Bruce, Y. Wang
-  category: cross
+  category: multidisciplinary
   url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:UeHWp8X0CEIC
-- title: On the Robustness of Deep Learning Models to Universal Adversarial Attack
-  year: 2018
-  venue: CRV
-  authors: Rezaul Karim, M. A. Islam, N. Mohammed, N. D. B. Bruce
-  category: vision
-  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:IjCSPb-OGe4C
 - title: "CoMOGrad and PHOG: From Computer Vision to Fast and Accurate Protein Tertiary Structure Retrieval"
   year: 2015
-  venue: Scientific Reports
+  venue: Scientific Reports 2015
   authors: Rezaul Karim, M. M. A. Aziz, S. Shatabda, M. S. Rahman, M. A. K. Mia, F. Zaman, et al.
-  category: cross
+  category: multidisciplinary
   url: https://www.nature.com/articles/srep13275
