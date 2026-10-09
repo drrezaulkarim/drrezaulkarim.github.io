@@ -64,8 +64,8 @@
       metric: State-of-the-art on Argoverse
       metric_todo: true
       links:
-        - label: Publication record
-          url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:Y0pCki6q_DkC
+        - label: Paper
+          url: https://arxiv.org/abs/2310.07438
   supporting:
     - title: Understanding Video Transformers for Segmentation
       venue: arXiv · 2023
@@ -89,8 +89,8 @@
       image_width: 433
       image_height: 245
       links:
-        - label: Publication record
-          url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:u-x6o8ySG0sC
+        - label: Paper
+          url: https://ieeexplore.ieee.org/document/8658560
     - title: Distributed Iterative Gating Networks
       venue: WACV 2020
       description: Distributed feedback for scene segmentation and iterative refinement.
@@ -101,7 +101,8 @@
     - title: On the Robustness of Deep Learning Models to Universal Adversarial Attack
       venue: CRV 2018
       description: Studying adversarial robustness in deep neural networks.
-      url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:IjCSPb-OGe4C
+      # <!-- TODO: replace IEEE title search with a verified direct paper permalink -->
+      url: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=On%20the%20robustness%20of%20deep%20learning%20models%20to%20universal%20adversarial%20attack
 
 - id: multidisciplinary
   category: multidisciplinary
@@ -113,8 +114,9 @@
       description: Collaborative work on financial prediction from noisy temporal data.
       metric: 198 citations
       links:
-        - label: Publication record
-          url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:UeHWp8X0CEIC
+        - label: Find paper at IEEE
+          # <!-- TODO: replace IEEE title search with a verified direct paper permalink -->
+          url: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Hybrid%20deep%20learning%20model%20for%20stock%20price%20prediction
     - title: CoMOGrad & PHOG
       venue: Scientific Reports 2015
       description: Applying computer-vision descriptors to protein tertiary structure retrieval.

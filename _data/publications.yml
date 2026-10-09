@@ -42,13 +42,14 @@
   venue: ICRA 2024
   authors: Rezaul Karim, S. M. A. Shabestary, A. Rasouli
   category: spatiotemporal
-  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:Y0pCki6q_DkC
+  url: https://arxiv.org/abs/2310.07438
 - title: Hybrid Deep Learning Model for Stock Price Prediction
   year: 2018
   venue: IEEE SSCI 2018
   authors: M. A. Hossain, Rezaul Karim, R. Thulasiram, N. D. B. Bruce, Y. Wang
   category: multidisciplinary
-  url: https://scholar.google.com/citations?view_op=view_citation&user=sgKzrSgAAAAJ&citation_for_view=sgKzrSgAAAAJ:UeHWp8X0CEIC
+  # <!-- TODO: replace IEEE title search with a verified direct paper permalink -->
+  url: https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Hybrid%20deep%20learning%20model%20for%20stock%20price%20prediction
 - title: "CoMOGrad and PHOG: From Computer Vision to Fast and Accurate Protein Tertiary Structure Retrieval"
   year: 2015
   venue: Scientific Reports 2015
