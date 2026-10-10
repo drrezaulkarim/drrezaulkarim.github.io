@@ -1,4 +1,8 @@
 - title: "EPAS: Efficient Training with Progressive Activation Sharing"
+  image: /assets/images/papers/epas.png
+  image_alt: EPAS progressive activation sharing diagram
+  image_width: 268
+  image_height: 256
   year: 2026
   venue: Canadian AI 2026 · PMLR 318
   authors: Rezaul Karim, M. Dialameh, Y. Liu, B. Chen, W. Ahmed
@@ -14,6 +18,10 @@
   category: foundation
   url: https://arxiv.org/abs/2604.24013
 - title: "ECHO-LLaMA: Efficient Caching for High-Performance LLaMA Training"
+  image: /assets/images/papers/echo-llama.png
+  image_alt: ECHO-LLaMA shared key and value cache architecture
+  image_width: 434
+  image_height: 441
   year: 2025
   venue: EMNLP 2025 (Industry)
   authors: M. Dialameh, Rezaul Karim, H. Rajabzadeh, O. M. Awad, B. Chen, H. J. Kwon, et al.
@@ -38,6 +46,10 @@
   category: spatiotemporal
   url: https://arxiv.org/abs/2304.05930
 - title: "DESTINE: Dynamic Goal Queries with Temporal Transductive Alignment for Trajectory Prediction"
+  image: /assets/images/papers/destine.png
+  image_alt: DESTINE stages of goal and trajectory prediction
+  image_width: 345
+  image_height: 245
   year: 2024
   venue: ICRA 2024
   authors: Rezaul Karim, S. M. A. Shabestary, A. Rasouli

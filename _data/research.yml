@@ -4,6 +4,10 @@
   framing: Making LLM training and serving faster and cheaper at scale.
   flagships:
     - title: EPAS
+      image: /assets/images/papers/epas.png
+      image_alt: EPAS attention-layer diagram showing progressive activation sharing
+      image_width: 268
+      image_height: 256
       venue: Canadian AI 2026 · PMLR 318
       description: Progressive activation sharing for LLaMA 125M–7B, with similar loss to the baseline.
       metric: Up to 11.1% higher training throughput · Up to 29% higher inference throughput
@@ -14,6 +18,10 @@
         - label: arXiv
           url: https://arxiv.org/abs/2601.19089
     - title: ECHO-LLaMA
+      image: /assets/images/papers/echo-llama.png
+      image_alt: ECHO-LLaMA architecture with shared key and value caches
+      image_width: 434
+      image_height: 441
       venue: EMNLP 2025 (Industry)
       description: Co-developed efficient caching for LLaMA training; second author.
       metric: Up to 77% higher training tokens/s · Up to 16% higher MFU
@@ -59,6 +67,10 @@
           url: /medvt/index.html
           local: true
     - title: DESTINE
+      image: /assets/images/papers/destine.png
+      image_alt: DESTINE goal, waypoint, and trajectory prediction with temporal transductive alignment
+      image_width: 345
+      image_height: 245
       venue: ICRA 2024
       description: Dynamic goal queries with temporal transductive alignment for trajectory prediction.
       metric: State-of-the-art on Argoverse
@@ -92,6 +104,10 @@
         - label: Paper
           url: https://ieeexplore.ieee.org/document/8658560
     - title: Distributed Iterative Gating Networks
+      image: /assets/images/papers/dignet.png
+      image_alt: Distributed Iterative Gating Networks segmentation results compared with ground truth and ResNet101
+      image_width: 319
+      image_height: 186
       venue: WACV 2020
       description: Distributed feedback for scene segmentation and iterative refinement.
       links:

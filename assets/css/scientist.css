@@ -62,8 +62,8 @@ svg.lucide { width:18px; height:18px; flex-shrink:0; stroke-width:1.7; vertical-
 .paper-links { display:flex; flex-wrap:wrap; gap:10px 20px; font-size:15px; color:var(--green); }
 .paper-links a { display:inline-flex; align-items:center; gap:6px; padding:4px 0; }
 .flagship .paper-links { margin-top:auto; padding-top:8px; }
-.research-figure { width:100%; margin:6px 0; }
-.research-figure img { max-width:100%; width:100%; height:auto; }
+.research-figure { width:100%; margin:16px 0; }
+.research-figure img { display:block; width:auto; max-width:100%; height:auto; max-height:300px; object-fit:contain; margin-inline:auto; }
 .supporting-work { margin-top:22px; border-bottom:1px solid var(--line); }
 .supporting-work summary { color:var(--green); cursor:pointer; padding:12px 0; font-size:16px; font-weight:600; }
 .supporting-work ul { list-style:none; margin:0; padding:0; }
@@ -89,6 +89,9 @@ svg.lucide { width:18px; height:18px; flex-shrink:0; stroke-width:1.7; vertical-
 .publication { display:grid; grid-template-columns:70px minmax(0,1fr); gap:25px; padding:25px 0; border-top:1px solid var(--line); }
 [hidden] { display:none !important; }
 .publication-year { color:var(--muted); font-size:15px; }
+.publication-content.has-thumbnail { display:grid; grid-template-columns:minmax(0,1fr) 180px; gap:24px; align-items:center; }
+.publication-thumbnail { display:block; padding:8px; background:#fff; border:1px solid var(--line); border-radius:4px; }
+.publication-thumbnail img { display:block; width:100%; height:auto; max-height:190px; object-fit:contain; }
 .publication-venue { color:var(--green); font-size:15px; margin-bottom:6px; }
 .publication h3 { font-size:19px; line-height:1.5; }
 .publication h3 svg { width:16px; height:16px; margin-left:4px; color:var(--green); }
@@ -164,6 +167,8 @@ svg.lucide { width:18px; height:18px; flex-shrink:0; stroke-width:1.7; vertical-
   .flagship h4,.patent h3,.service-grid h3 { font-size:26px; }
   .publication { grid-template-columns:40px minmax(0,1fr); gap:14px; padding:22px 0; }
   .publication h3 { font-size:18px; }
+  .publication-content.has-thumbnail { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .publication-thumbnail { width:min(100%,220px); }
   .site-footer .container { flex-wrap:wrap; gap:8px 20px; }
   .site-footer p:nth-child(2) { order:3; width:100%; }
 }
